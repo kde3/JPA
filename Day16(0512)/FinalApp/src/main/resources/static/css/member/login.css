@@ -1,0 +1,86 @@
+.main-wrap{
+    width: 593px;
+    margin: 40px auto;
+}
+
+.login-box{
+    padding: 70px 60px;
+    border: 1px solid #dbdbdb;
+}
+
+main > h2{
+    margin-bottom: 20px;
+}
+
+.input-sec{
+    display: flex;
+    justify-content: space-between;
+}
+.input-sec__input-box input{
+    display: block;
+    width: 292px;
+    height: 36px;
+    margin: 15px 0 10px 0;
+    padding: 0 0 0 8px;
+    border: 1px solid #d0d0d0;
+    color: #979d9d;
+}
+
+#login-btn{
+    width: 158px;
+    height: 90px;
+    margin: 15px 0 0 0;
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* 하단 버튼 영역 */
+.btn-sec{
+    margin: 40px 0 0 0;
+    padding: 20px 0 0 0;
+    border-top: 1px solid #dcdcdc;
+}
+
+.join-btn{
+    display: block;
+    background-color: white;
+    border: 1px solid var(--week-color1);
+    padding: 10px 0;
+    color: var(--main-color);
+    text-align: center;
+    cursor: pointer;
+    font-family: NotoSans-Medium;
+}
+
+.join-btn:hover {
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <th:block th:insert="~{/commons/style_js :: head}"></th:block>
+  <link rel="stylesheet" th:href="@{/css/store/detail.css}">
+  <script defer th:src="@{/js/store/detail.js}"></script>
+</head>
+<body>
+<header th:replace="~{/fragments/header :: header}"></header>
+<section class="content-wrap">
+  <main>
+    <section class="item-img-info">
+      <section class="img-sec">
+        <div class="img-sec__box">
+          <img th:src="@{/imgs/board/sample/sample02.jpg}" alt="">
+        </div>
+      </section>
+      <section class="info-sec">
+        <!-- 요청 경로 설정하기 -->
+        <form action="">
+          <!--필요한 추가정보 hidden으로 처리하기-->
+          <input type="hidden" name="">
+
+          <div class="info-sec__title">
+            <!--카테 넣기-->
+            <h3 class="info-sec__cate">카테(책)</h3>
+            <br>
+            <!--제목 넣기-->
+            <h1 class="info-sec__name">상품 이름</h1>
+          </div>
+
+          <div class="info-sec__price">
+            <div class="info-sec__discount-rate"><span>0</span>%</div>
+            <div class="info-sec__discounted">
+              <!--판매가 넣기-->
+              <strong><span id="result-price">1,111</span>원</strong>
+            </div>
+          </div>
+
+          <div class="info-sec__simple-info">
+            <dl class="info-sec__simple-list">
+              <dt>판매가</dt>
+              <!--판매가 넣기-->
+              <dd><strong>1,111</strong>원</dd>
+            </dl>
+            <dl class="info-sec__simple-list">
+              <dt>구매제한</dt>
+              <dd>옵션당 최소 1개</dd>
+            </dl>
+            <dl class="info-sec__simple-list">
+              <dt>구매혜택</dt>
+              <dd>-</dd>
+            </dl>
+            <dl class="info-sec__simple-list">
+              <dt>배송비</dt>
+              <dd>2,500원 / 주문시결제(선결제)</dd>
+            </dl>
+          </div>
+
+          <div class="info-sec__cart">
+            <div class="cart-name">상품 이름</div>
+            <div class="cart-count">
+              <!--name 설정 하기-->
+              <input type="text" name="count" id="count" value="1">
+              <span>
+                <button type="button" class="up">증가</button>
+                <button type="button" class="down">감소</button>
+              </span>
+            </div>
+            <div class="cart-price">
+              <span>1,111</span>원
+            </div>
+          </div>
+
+          <div class="info-sec__total-price">
+            <span>총 합계금액</span>
+            <strong><span id="total-price">1,111</span>원</strong>
+          </div>
+
+          <div class="info-sec__btn-box">
+            <button type="button" id="cart-btn">장바구니</button>
+            <button id="submit-btn">바로 구매</button>
+          </div>
+
+        </form>
+      </section>
+    </section>
+
+    <section class="item-detail-info">
+      <section class="item-detail-info__tab">
+        <ul>
+          <li class="active">상품상세정보</li>
+          <li>배송안내</li>
+          <li>교환 및 반품안내</li>
+          <li>상품 후기</li>
+          <li>상품문의</li>
+        </ul>
+      </section>
+      <section class="item-detail">
+        내용
+        내용
+        내용
+      </section>
+    </section>
+  </main>
+</section>
+<footer th:replace="~{/fragments/footer :: footer}"></footer>
+</body>
+</html>

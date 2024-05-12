@@ -1,0 +1,83 @@
+.footer {
+    padding: 25px 0 35px;
+    margin: 0 auto;
+    background: #fbfbfb;
+}
+
+.footer__wrap {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.footer__links {
+    height: 50px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e8e7e7;
+    padding-bottom: 7px;
+}
+
+.footer__links > ul {
+    display: flex;
+}
+
+.footer__links > ul > li {
+    padding: 15px 15px;
+    font-size: 12px;
+    color: #3d3935;
+    position: relative;
+}
+
+.footer__links > ul > li:not(li:last-child)::after {
+    content: '|';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 14px;
+    color: #3d3935;
+}
+
+.footer__info {
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__company,
+.footer__address,
+.footer__detail-info{
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #828282;
+}
+
+.footer__company > strong{
+    font-weight: bold;
+    color: #3d3935;
+}
+
+.footer__exp {
+    margin-top: 30px;
+    line-height: 20px;
+    color: #868686;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.footer__copy {
+    margin-top: 10px;
+    line-height: 20px;
+    color: #868686;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.footer__info-box2 > p{
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #828282;
+}
+
+.footer__info-box2 > .footer__contact{
+    font-weight: bold;
+}

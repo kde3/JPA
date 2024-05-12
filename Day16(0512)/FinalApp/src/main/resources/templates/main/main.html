@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <th:block  th:insert="~{/commons/style_js :: head}"></th:block>
+  <link rel="stylesheet" th:href="@{/css/main/main.css}">
+</head>
+<body>
+<header th:replace="~{/fragments/header :: header}"></header>
+<section class="content-wrap">
+  <section class="banner-section">
+    <div class="banner-box">
+      <ul class="banner-ul">
+        <li>
+          <img th:src="@{/imgs/main/banner/main_banner01.png}"/>
+        </li>
+
+        <li>
+          <img th:src="@{/imgs/main/banner/main_banner02.png}"/>
+        </li>
+        <li>
+          <img th:src="@{/imgs/main/banner/main_banner03.png}"/>
+        </li>
+        <li>
+          <img th:src="@{/imgs/main/banner/main_banner04.png}"/>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <main>
+    <div class="main__content-wrap">
+      <div class="top-box">
+
+
+        <section class="new-book">
+          <div class="section-head">
+            <div class="section-head__title">
+              신작 도서
+            </div>
+            <div class="section-head__more">
+              <a href=""><!-- 더 보기 링크 설정하기 -->
+                <span>+</span>
+                <span>more</span>
+              </a>
+            </div>
+          </div>
+          <div class="new-book__content-box">
+            <!-- 반복요소 -->
+            <article class="new-book__item">
+              <a href=""> <!--아이템 링크 설정하기-->
+                <div class="new-book__img-box">
+                  <img th:src="@{/imgs/main/sample/sample01.jpg}" alt="">
+                </div>
+                <div class="new-book__info">
+                  <p>책 이름</p>
+                </div>
+              </a>
+            </article>
+            <!-- /반복요소 -->
+
+            <!-- 아이템 반복요소 샘플 -->
+            <article class="new-book__item">
+              <a href=""> <!--아이템 링크 설정하기-->
+                <div class="new-book__img-box">
+                  <img th:src="@{/imgs/main/sample/sample01.jpg}" alt="">
+                </div>
+                <div class="new-book__info">
+                  <p>책 이름</p>
+                </div>
+              </a>
+            </article>
+            <article class="new-book__item">
+              <a href=""> <!--아이템 링크 설정하기-->
+                <div class="new-book__img-box">
+                  <img th:src="@{/imgs/main/sample/sample01.jpg}" alt="">
+                </div>
+                <div class="new-book__info">
+                  <p>책 이름</p>
+                </div>
+              </a>
+            </article>
+            <!-- /아이템 반복요소 샘플-->
+          </div>
+        </section>
+
+
+        <section class="community">
+          <div class="section-head">
+            <div class="section-head__title">
+              자유 게시판
+            </div>
+            <div class="section-head__more">
+              <a href=""><!-- 더 보기 링크 설정하기 -->
+                <span>+</span>
+                <span>more</span>
+              </a>
+            </div>
+          </div>
+          <div class="community__content-box">
+            <ul class="community__list-ul">
+              <!-- li 반복 요소 -->
+              <li>
+                <a href=""> <!--바로가기 링크-->
+                  <div class="community__img-box">
+                    <img th:src="@{/imgs/main/sample/65x65.png}" alt="">
+                  </div>
+                  <div class="community__info">
+                    <span>일상</span>
+                    <p>너무우 춥다아아아</p>
+                  </div>
+                </a>
+              </li>
+              <!-- /li 반복 요소 -->
+
+              <!-- 반복 요소 샘플  -->
+              <li>
+                <a href=""> <!--바로가기 링크-->
+                  <div class="community__img-box">
+                    <img th:src="@{/imgs/main/sample/65x65.png}" alt="">
+                  </div>
+                  <div class="community__info">
+                    <span>일상</span>
+                    <p>너무우 춥다아아아</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href=""> <!--바로가기 링크-->
+                  <div class="community__img-box">
+                    <img th:src="@{/imgs/main/sample/65x65.png}" alt="">
+                  </div>
+                  <div class="community__info">
+                    <span>일상</span>
+                    <p>너무우 춥다아아아</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href=""> <!--바로가기 링크-->
+                  <div class="community__img-box">
+                    <img th:src="@{/imgs/main/sample/65x65.png}" alt="">
+                  </div>
+                  <div class="community__info">
+                    <span>일상</span>
+                    <p>너무우 춥다아아아</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href=""> <!--바로가기 링크-->
+                  <div class="community__img-box">
+                    <img th:src="@{/imgs/main/sample/65x65.png}" alt="">
+                  </div>
+                  <div class="community__info">
+                    <span>일상</span>
+                    <p>너무우 춥다아아아</p>
+                  </div>
+                </a>
+              </li>
+
+              <!-- /반복 요소 샘플-->
+            </ul>
+          </div>
+        </section>
+
+      </div>
+      <section class="middle-banner-box">
+        <a href=""> <!-- 링크, 이미지 설정-->
+          <img th:src="@{/imgs/main/banner/middle_banner.png}" alt="">
+        </a>
+      </section>
+
+
+      <div class="middle-box">
+        <section class="monthly-book">
+          <div class="section-head">
+            <div class="section-head__title">
+              이달의 책
+            </div>
+            <div class="section-head__more">
+              <a href=""><!-- 더 보기 링크 설정하기 -->
+                <span>+</span>
+                <span>more</span>
+              </a>
+            </div>
+          </div>
+          <div class="monthly-book__content-box">
+            <a href=""></a> <!--여기에 링크 설정(위치 변경X)-->
+            <!-- 410 * 410 -->
+            <img th:src="@{/imgs/main/sample/sample02.jpg}" alt="">
+            <div class="monthly-book__text-box">
+              <span>이달의 책</span>
+              <p>선산 스위트와 함께 <br> 달콤한 겨울을 즐겨보세요</p>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="store-direct">
+          <div class="section-head">
+            <div class="section-head__title">
+              이벤트 바로가기🚕 <!-- 문구 수정하기 -->
+            </div>
+            <div class="section-head__more">
+            </div>
+          </div>
+
+          <div class="store-direct__content-box">
+            <img th:src="@{/imgs/main/sample/sample03.jpg}" alt="">
+          </div>
+        </section>
+
+      </div>
+
+      <section class="goods">
+        <div class="section-head">
+          <div class="section-head__title">
+            독서 용품 <!-- 문구 수정하기 -->
+          </div>
+          <div class="section-head__more">
+            <a href=""><!-- 더 보기 링크 설정하기 -->
+              <span>+</span>
+              <span>more</span>
+            </a>
+          </div>
+        </div>
+        <div class="goods__content-box">
+          <!-- 반복 요소 8개 -->
+          <article class="goods__item">
+            <a href=""> <!--링크 걸기-->
+              <div class="goods__img-box">
+                <img th:src="@{/imgs/main/sample/sample04.jpg}" alt="">
+              </div>
+              <p>
+                상품 정보
+              </p>
+            </a>
+          </article>
+          <!-- /반복 요소 -->
+          <!-- 샘플 -->
+          <article class="goods__item">
+            <a href=""> <!--링크 걸기-->
+              <div class="goods__img-box">
+                <img th:src="@{/imgs/main/sample/sample04.jpg}" alt="">
+              </div>
+              <p>
+                상품 정보
+              </p>
+            </a>
+          </article>
+          <article class="goods__item">
+            <a href=""> <!--링크 걸기-->
+              <div class="goods__img-box">
+                <img th:src="@{/imgs/main/sample/sample04.jpg}" alt="">
+              </div>
+              <p>
+                상품 정보
+              </p>
+            </a>
+          </article>
+          <article class="goods__item">
+            <a href=""> <!--링크 걸기-->
+              <div class="goods__img-box">
+                <img th:src="@{/imgs/main/sample/sample04.jpg}" alt="">
+              </div>
+              <p>
+                상품 정보
+              </p>
+            </a>
+          </article><article class="goods__item">
+          <a href=""> <!--링크 걸기-->
+            <div class="goods__img-box">
+              <img th:src="@{/imgs/main/sample/sample04.jpg}" alt="">
+            </div>
+            <p>
+              상품 정보
+            </p>
+          </a>
+        </article><article class="goods__item">
+          <a href=""> <!--링크 걸기-->
+            <div class="goods__img-box">
+              <img th:src="@{/imgs/main/sample/sample04.jpg}" alt="">
+            </div>
+            <p>
+              상품 정보
+            </p>
+          </a>
+        </article><article class="goods__item">
+          <a href=""> <!--링크 걸기-->
+            <div class="goods__img-box">
+              <img th:src="@{/imgs/main/sample/sample04.jpg}" alt="">
+            </div>
+            <p>
+              상품 정보
+            </p>
+          </a>
+        </article>
+
+          <!-- /샘플 -->
+        </div>
+      </section>
+
+    </div>
+  </main>
+</section>
+<footer th:replace="~{/fragments/footer :: footer}"></footer>
+</body>
+</html>

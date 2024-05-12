@@ -1,0 +1,118 @@
+.community-wrap{
+    width: 1200px;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+main{
+    margin-bottom: 100px;
+}
+
+/* 상단 배너 */
+.top-banner{
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* 타이틀 */
+.title{
+    height: 50px;
+    margin: 20px 0 40px;
+    border-bottom: 1px solid #dbdbdb;
+    box-sizing: border-box;
+}
+
+.title > h3{
+    display: inline-block;
+    height: 96%;
+    font-size: 25px;
+    font-weight: 400;
+    border-bottom: 3px solid #252525;
+}
+
+/* 카테 고리 리스트 */
+.cate{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.cate-ul{
+    display: flex;
+}
+
+.cate-ul > a{
+    display: inline-block;
+    font-size: 15px;
+    line-height: 30px;
+    background: #f5f5f5;
+    padding: 0 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.cate-ul > a.active{
+    background-color: var(--week-color2);
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.write-btn{
+    display: inline-block;
+    min-width: 90px;
+    height: 30px;
+    margin: 0 0 0 5px;
+    padding: 0 10px 0 10px;
+    line-height: 28px;
+    color: #ffffff;
+    font-size: 12px;
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+/* 게시물 리스트 */
+.board-list-table{
+    width: 100%;
+    margin: 0 0 20px 0;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-top: 1px solid #999999;
+    text-align: center;
+}
+
+.board-list-table th{
+    padding: 10px 10px 10px 14px;
+    border-bottom: 1px solid #dbdbdb;
+    background: #fbfbfb;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    font-weight: normal;
+}
+
+.board-list-table__notice{
+    height: 10px;
+    background-color: #f7f7f7;
+}
+
+.board-list-table__notice td{
+    padding: 13px 10px 15px 10px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.board-list-table__normal td{
+    padding: 13px 10px 15px 10px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.board-list-table__writer{
+    text-align: left;
+}
+
+.board-list-table__title{
+    cursor: pointer;
+    text-align: left;
+}
+

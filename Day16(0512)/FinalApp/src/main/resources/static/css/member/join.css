@@ -1,0 +1,146 @@
+main{
+    width: 400px;
+    margin: 80px auto;
+    padding: 70px 60px;
+    border: 1px solid #dbdbdb;
+}
+
+main > h1{
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.025em;
+    text-align: left;
+    margin: 0 0 32px;
+}
+
+/* 인풋 스타일 */
+.input-box{
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.input-box > .title{
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(61, 61, 61);
+    margin: 0 0 10px;
+}
+
+.input-box input{
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dbdbdb;
+    outline-color: rgb(61,61,61);
+    caret-color: var(--main-color);
+}
+
+.input-box input::placeholder{
+    color: rgb(158, 158, 158);
+}
+
+#checkPassword{
+    margin-top: 10px;
+}
+/* 생일 */
+input[type='date']::before {
+    content: attr(data-placeholder);
+    color: rgb(158, 158, 158);
+    width: 100%;
+}
+
+input[type='date']:focus::before,
+input[type='date']:valid::before {
+    display: none;
+}
+
+/* 성별 */
+.gender-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gender-box > input{
+    display: none;
+    position: absolute;
+}
+
+.gender-box > input:checked+label{
+    background-color: var(--main-color);
+    color: white;
+}
+
+.gender-box > label{
+    border: 1px solid #dbdbdb;
+    color: rgb(158, 158, 158);
+    font-size: 12px;
+    font-weight: bold;
+    width: 47%;
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.gender-box > label:hover{
+    border: 1px solid var(--week-color1);
+    color: var(--week-color1);
+}
+
+/* 주소 */
+.address-box{
+    display: flex;
+}
+
+.address-box > button{
+    padding: 0 10px;
+    height: 41px;
+    width: 200px;
+    margin-left: 10px;
+
+    background-color: white;
+    border: 1px solid rgb(61,61,61);
+    color: rgb(61,61,61);
+    cursor: pointer;
+}
+
+.address-box > button:hover{
+    background-color: var(--main-color);
+    border: var(--main-color);
+    color: white;
+}
+
+
+#zipcode,
+#address,
+#addressDetail{
+    margin-bottom: 10px;
+}
+
+/* 가입 버튼 */
+.btn-box{
+    border-top: 1px solid #dbdbdb;
+    margin-top: 30px;
+    padding: 40px 0 20px 0;
+}
+
+#submit-btn{
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+}
+
+#submit-btn:hover{
+    background-color: #ffb5b5;
+}
+
+/* 체크 메세지 */
+.check-msg{
+    color: red;
+    font-size: 12px;
+}

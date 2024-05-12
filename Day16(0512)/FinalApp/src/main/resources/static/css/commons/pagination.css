@@ -1,0 +1,36 @@
+/* 페이징 */
+.pagination{
+    padding-top: 0;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.page-ul{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.page-ul li{
+    margin-right: 9px;
+}
+
+.page-ul li a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1A191E;
+    line-height: 35px;
+}
+
+.page-ul .active > a{
+    border-radius: 50%;
+    background-color: var(--main-color);
+
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}

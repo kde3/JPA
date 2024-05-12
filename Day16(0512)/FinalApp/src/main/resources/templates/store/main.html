@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <th:block th:insert="~{/commons/style_js :: head}"></th:block>
+  <link rel="stylesheet" th:href="@{/css/store/main.css}">
+</head>
+<body>
+<header th:replace="~{/fragments/header :: header}"></header>
+<section class="category">
+  <ul>
+    <li class="active">
+      <a href="">NEW</a>
+    </li>
+    <li>
+      <a href=""> 전체 상품</a>
+    </li>
+    <li>
+      <a href="">책</a>
+    </li>
+    <li>
+      <a href=""> 커버</a>
+    </li>
+    <li>
+      <a href=""> 거치대</a>
+    </li>
+  </ul>
+</section>
+
+<section class="content-wrap">
+  <main>
+
+    <section class="list-box">
+      <h5>책 📖</h5>
+      <div class="list-box__grid">
+        <!-- 반복요소 (5개)-->
+        <article class="item">
+          <a href=""><!--링크 수정-->
+            <div class="item__img-box">
+              <img th:src="@{/imgs/board/sample/sample01.jpg}" alt="">
+            </div>
+            <div class="item__info">
+              <h6>Book Title</h6>
+              <p>Author Name</p>
+            </div>
+          </a>
+        </article>
+        <!-- /반복요소 -->
+        <!-- ------------------------------샘플------------------------------ -->
+        <article class="item">
+          <a href=""><!--링크 수정-->
+            <div class="item__img-box">
+              <img th:src="@{/imgs/board/sample/sample01.jpg}" alt="">
+            </div>
+            <div class="item__info">
+              <h6>Book Title</h6>
+              <p>Author Name</p>
+            </div>
+          </a>
+        </article>
+        <article class="item">
+          <a href=""><!--링크 수정-->
+            <div class="item__img-box">
+              <img th:src="@{/imgs/board/sample/sample01.jpg}" alt="">
+            </div>
+            <div class="item__info">
+              <h6>Book Title</h6>
+              <p>Author Name</p>
+            </div>
+          </a>
+        </article>
+        <article class="item">
+          <a href=""><!--링크 수정-->
+            <div class="item__img-box">
+              <img th:src="@{/imgs/board/sample/sample01.jpg}" alt="">
+            </div>
+            <div class="item__info">
+              <h6>Book Title</h6>
+              <p>Author Name</p>
+            </div>
+          </a>
+        </article>
+        <!--/------------------------------샘플------------------------------ -->
+      </div>
+      <div class="btn-box">
+        <button type="button" class="show-all-btn">
+          <!--링크 수정-->
+          <a href="">전체보기</a>
+        </button>
+      </div>
+    </section>
+
+
+    <section class="list-box">
+      <h5>커버</h5>
+      <div class="list-box__grid">
+        <!-- 반복요소 (4개)-->
+        <article class="item">
+          <a href=""><!--링크 수정-->
+            <div class="item__img-box">
+              <img th:src="@{/imgs/board/sample/sample01.jpg}" alt="">
+            </div>
+            <div class="item__info">
+              <h6>Book Title</h6>
+              <p>Author Name</p>
+            </div>
+          </a>
+        </article>
+        <!-- /반복요소 -->
+      </div>
+      <div class="btn-box">
+        <button type="button" class="show-all-btn">
+          <!--링크 수정-->
+          <a href="">전체보기</a>
+        </button>
+      </div>
+    </section>
+
+    <section class="list-box">
+      <h5>거치대</h5>
+      <div class="list-box__grid">
+        <!-- 반복요소 (5개)-->
+        <article class="item">
+          <a href=""><!--링크 수정-->
+            <div class="item__img-box">
+              <img th:src="@{/imgs/board/sample/sample01.jpg}" alt="">
+            </div>
+            <div class="item__info">
+              <h6>Book Title</h6>
+              <p>Author Name</p>
+            </div>
+          </a>
+        </article>
+        <!-- /반복요소 -->
+      </div>
+      <div class="btn-box">
+        <button type="button" class="show-all-btn">
+          <!--링크 수정-->
+          <a href="">전체보기</a>
+        </button>
+      </div>
+    </section>
+
+  </main>
+</section>
+<footer th:replace="~{/fragments/footer :: footer}"></footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

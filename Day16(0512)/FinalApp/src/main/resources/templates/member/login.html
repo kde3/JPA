@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <th:block th:insert="~{/commons/style_js :: head}"></th:block>
+  <link rel="stylesheet" th:href="@{/css/member/login.css}">
+</head>
+<body>
+<header th:replace="~{/fragments/header :: header}"></header>
+<section class="content-wrap">
+  <div class="main-wrap">
+    <main>
+      <h2>로그인</h2>
+      <section class="login-box">
+        <h3>회원 로그인</h3>
+        <!--로그인 경로-->
+        <form action="" method="post">
+          <section class="input-sec">
+            <div class="input-sec__input-box">
+              <input type="text" id="login-id" name="loginId" placeholder="아이디">
+              <input type="password" id="password" name="password" placeholder="비밀번호">
+            </div>
+              <button id="login-btn">로그인</button>
+          </section>
+        </form>
+        <section class="btn-sec">
+          <!--가입 링크-->
+          <a href="" class="join-btn">회원 가입</a>
+        </section>
+      </section>
+    </main>
+  </div>
+</section>
+<footer th:replace="~{/fragments/footer :: footer}"></footer>
+</body>
+</html>

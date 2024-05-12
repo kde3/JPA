@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <th:block  th:insert="~{/commons/style_js :: head}"></th:block>
+  <link rel="stylesheet" th:href="@{/css/board/list.css}" />
+  <link rel="stylesheet" th:href="@{/css/commons/pagination.css}">
+</head>
+<body>
+<header th:replace="~{/fragments/header :: header}"></header>
+<section class="content-wrap">
+  <div class="community-wrap">
+    <section class="top-banner">
+      <img src="/imgs/board/banner/banner01.png" alt="">
+    </section>
+    <main>
+      <section class="title">
+        <h3>자유 게시판</h3>
+      </section>
+      <section class="cate">
+        <ul class="cate-ul">
+          <a href="" class="active">
+            <li>전체보기</li>
+          </a>
+          <a href="">
+            <li>공지</li>
+          </a>
+          <a href="">
+            <li>기타1</li>
+          </a>
+          <a href="">
+            <li>기타2</li>
+          </a>
+          <a href="">
+            <li>기타3</li>
+          </a>
+        </ul>
+        <button type="button" class="write-btn">글쓰기</button>
+      </section>
+
+      <section class="board-list">
+        <table class="board-list-table">
+          <colgroup>
+            <col style="width:5%">
+            <col style="width:6%">
+            <col style="width:13%">
+            <col>
+            <col style="width:6%">
+            <col style="width:6%">
+            <col style="width:7%">
+          </colgroup>
+          <thead>
+          <tr>
+            <th>번호</th>
+            <th>분류</th>
+            <th>작성자</th>
+            <th>제목</th>
+            <th>조회</th>
+            <th>추천</th>
+            <th>날짜</th>
+          </tr>
+          </thead>
+          <tbody>
+          <!--공지 반복 요소-->
+          <tr class="board-list-table__notice">
+            <td>
+              <img src="/imgs/board/icon/icon_board_notice.png" alt="">
+            </td>
+            <td>[공지]</td>
+            <td class="board-list-table__writer">관리자</td>
+            <td class="board-list-table__title">🎇신년맞이 이벤트🎇</td>
+            <td>100</td>
+            <td>5</td>
+            <td>23/12/12</td>
+          </tr>
+          <!--/공지 반복 요소-->
+          <!--일반글 반복 요소-->
+          <tr class="board-list-table__normal">
+            <td>1539</td>
+            <td>일상</td>
+            <td class="board-list-table__writer">aaa</td>
+            <td class="board-list-table__title">test</td>
+            <td>24</td>
+            <td>0</td>
+            <td>23/12/26</td>
+          </tr>
+          <!--/일반글 반복 요소-->
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <!-- 페이징 영역 -->
+    <section class="pagination">
+      <div class="pagination-wrap">
+        <ul class="page-ul">
+          <li>
+            <a href="" class="arrow">
+              <img src="/imgs/board/icon/icon_arrow_page_l.png" alt="">
+            </a>
+          </li>
+
+          <li class="active">
+            <a href="">1</a>
+          </li>
+          <li>
+            <a href="">2</a>
+          </li>
+          <li>
+            <a href="">3</a>
+          </li>
+          <li>
+            <a href="">4</a>
+          </li>
+          <li>
+            <a href="">5</a>
+          </li>
+
+          <li>
+            <a href="" class="arrow">
+              <img src="/imgs/board/icon/icon_arrow_page_r.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- /페이징 영역 -->
+  </div>
+</section>
+<footer th:replace="~{/fragments/footer :: footer}"></footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+.content-wrap{
+    width: 1200px;
+    margin : 0 auto;
+    padding: 100px 0;
+}
+
+main{
+    margin-bottom: 150px;
+}
+
+/*카테고리*/
+.category{
+    margin-top: 100px;
+}
+.category > ul {
+    display: flex;
+    justify-content: center;
+}
+
+.category li{
+    width: 150px;
+    margin: 0 7px;
+    vertical-align: middle;
+}
+
+.category li a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 500px;
+    border: 1px solid #dedede;
+    font-size: 17px;
+    font-weight: 400;
+    color: #1A191E;
+    text-align: center;
+    line-height: 50px;
+}
+
+.category li.active a{
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    color: white;
+}
+
+/* 리스트 */
+.list-box__grid{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 70px 10px;
+}
+
+.item__img-box > img{
+    width: 100%;
+    height: 260px;
+    border-radius: 10px;
+}
+
+.item__info > h6 {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
+    color: #252525;
+}
+
+.item__info > p{
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #acacac;
+}

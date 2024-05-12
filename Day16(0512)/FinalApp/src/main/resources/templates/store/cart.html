@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <th:block  th:insert="~{/commons/style_js :: head}"></th:block>
+  <link rel="stylesheet" th:href="@{/css/store/cart.css}">
+  <script defer th:src="@{/js/store/cart.js}"></script>
+</head>
+<body>
+<header th:replace="~{/fragments/header :: header}"></header>
+<main>
+  <div class="cart-wrap">
+    <section class="cart-title">
+      <h2>장바구니</h2>
+      <ol>
+        <li class="page-on">
+          <span>01</span> 장바구니
+          <span>
+            <img
+                src="https://cdn-pro-web-251-112.cdn-nhncommerce.com/motioneye1_godomall_com/data/skin/front/a_sr01/img/member/icon_join_step_off.png"
+                alt="장바구니완료"/>
+          </span>
+        </li>
+        <li class="page_on">
+          <span>02</span> 주문서작성/결제<span>
+          <img
+              src="https://cdn-pro-web-251-112.cdn-nhncommerce.com/motioneye1_godomall_com/data/skin/front/a_sr01/img/member/icon_join_step_off.png"
+              alt="주문서작성/결제완료"/>
+        </span>
+        </li>
+        <li><span>03</span> 주문완료</li>
+      </ol>
+    </section> <!-- /타이틀 섹션 -->
+
+    <!-- 백엔드 작업 시 상품 목록을 form으로 보낼거면
+    반복요소에 input hidden 활용하기-->
+    <form action="">
+      <section class="cart-list">
+        <table>
+          <colgroup>
+            <col style="width:3%">  <!-- 체크박스 -->
+            <col>          <!-- 상품명/옵션 -->
+            <col style="width:15%">  <!-- 수량 -->
+            <col style="width:10%"> <!-- 상품금액 -->
+            <col style="width:13%"> <!-- 할인/적립 -->
+            <col style="width:10%"> <!-- 합계금액 -->
+            <col style="width:12%"> <!-- 배송비 -->
+          </colgroup>
+          <thead>
+          <tr>
+            <th>
+              <div>
+                <input type="checkbox" id="check-all" class="check-box" checked="checked">
+                <label for="check-all" class="check-box__label check-box__label--checked"></label>
+              </div>
+            </th>
+            <th>상품/옵션 정보</th>
+            <th>수량</th>
+            <th>상품금액</th>
+            <th>할인</th>
+            <th>합계금액</th>
+            <th>배송비</th>
+          </tr>
+          </thead>
+          <tbody>
+          <!--반복 요소-->
+          <tr>
+            <td>
+              <div>
+                <input type="checkbox" class="check-box check-box__children" checked="checked">
+              </div>
+            </td>
+            <td class="product-info">
+              <div class="product-info__content">
+              <span>
+                <!--상품 주소 연결-->
+                <a href="">
+                  <!--상품 이미지 연결-->
+                  <img
+                      src="https://cdn-pro-web-251-112.cdn-nhncommerce.com/motioneye1_godomall_com/data/goods/23/12/51/100004763/100004763_list_066.jpg"
+                      alt="">
+                </a>
+              </span>
+                <div class="product-info__box">
+                  <div class="product-info__coupon">
+                    <img
+                        src="https://cdn-pro-web-251-112.cdn-nhncommerce.com/motioneye1_godomall_com/data/skin/front/a_sr01/img/common/btn/btn_coupon_apply.png"
+                        alt="">
+                  </div>
+                  <!-- 상품 설명 넣기-->
+                  <div class="product-info__detail">
+                    상품 정보~~~~~
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="product-count">
+              <div class="product-count__content">
+                <strong><span>1</span>개</strong>
+                <div class="count-change-btn">
+                  <span>옵션/수량변경</span>
+                </div>
+              </div>
+            </td>
+            <td class="product-price">
+              <div class="product-price__content">
+                <!--상품금액 넣기-->
+                <strong><span>28,020</span>원</strong>
+              </div>
+            </td>
+            <td class="product-sale">
+              <div class="product-sale__content">
+                <!--할인률 넣기-->
+                <strong><span>20</span>% 할인</strong>
+              </div>
+            </td>
+            <td class="product-total-price">
+              <div class="product-total-price__content">
+                <!--합계 금액 넣기-->
+                <strong><span>28,020</span>원</strong>
+              </div>
+            </td>
+            <!-- 전체 리스트 사이즈를 rowspan에 넣기-->
+            <td class="delivery-charge" rowspan="">
+              <div class="delivery-charge__content">
+                기본 - 고정배송비<br>
+                0원
+                <br>
+                (택배-선결제)
+              </div>
+            </td>
+          </tr>
+          <!--/반복 요소-->
+
+          </tbody>
+        </table>
+      </section>
+    </form>
+    <div class="go-back">
+      <a href="">
+        <span>&lt 쇼핑 계속하기</span>
+      </a>
+    </div>
+
+    <div class="cart-total">
+      <div class="cart-total__price">
+        <div class="cart-total__product">
+          <span>총 <strong>1</strong>개의 상품금액</span>
+          <span class="price-color"><strong>28,020</strong>원</span>
+        </div>
+        <span class="plus-img">
+          <img src="https://cdn-pro-web-251-112.cdn-nhncommerce.com/motioneye1_godomall_com/data/skin/front/a_sr01/img/order/order_price_plus.png" alt="">
+        </span>
+        <div class="cart-total__delivery">
+          <span>배송비</span>
+          <span class="price-color"><strong>0</strong>원</span>
+        </div>
+        <span class="equals-img">
+          <img src="https://cdn-pro-web-251-112.cdn-nhncommerce.com/motioneye1_godomall_com/data/skin/front/a_sr01/img/order/order_price_total.png" alt="">
+        </span>
+        <div class="cart-total__sum">
+          <span>합계</span>
+          <span class="price-color"><strong>92,620</strong>원</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-box">
+      <div class="btn-list--left">
+        <div class="delete-btn">
+          선택 상품 삭제
+        </div>
+      </div>
+      <div class="btn-list--right">
+        <div class="choice-order-btn">
+          선택 상품 주문
+        </div>
+        <div class="all-order-btn">
+          전체 상품 주문
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer th:replace="~{/fragments/footer :: footer}"></footer>
+
+</body>
+</html>

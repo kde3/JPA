@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<header th:fragment="header" class="header">
+  <div class="header__nav-wrap">
+    <nav class="header__nav">
+      <h1>
+        <a href="/">
+          LOGO
+        </a>
+      </h1>
+
+      <ul class="header__nav-ul">
+        <li>
+          신상품
+        </li>
+        <li>
+          이벤트
+        </li>
+        <li>
+          쇼핑
+          <ul class="header__sub-menu header__sub-market none">
+            <li>전체상품</li>
+            <li>책 📖</li>
+            <li>책 커버</li>
+            <li>독서대</li>
+          </ul>
+        </li>
+        <li>
+          커뮤니티
+          <ul class="header__sub-menu none">
+            <li>자유 게시판</li>
+          </ul>
+        </li>
+        <li>
+          QnA
+        </li>
+
+      </ul>
+      <div class="icon-box">
+        <div class="search-icon-box icon-box">
+          <img th:src="@{/imgs/fragments/icon/icon_search.png}" alt="">
+        </div>
+        <div class="cart-icon-box icon-box">
+          <img th:src="@{/imgs/fragments/icon/icon_cart.png}" alt="">
+        </div>
+        <div class="login-icon-box icon-box">
+          <img th:src="@{/imgs/fragments/icon/icon_user.png}" alt="">
+        </div>
+      </div>
+      <div class="header__sub-menu-bg none"></div>
+    </nav>
+  </div>
+  <section class="header__search-top-menu none">
+    <!--    검색 url 넣기 -->
+    <!--    submit버튼으로 처리함-->
+    <form action="" method="post">
+      <div class="header__search-top-box">
+        <div class="header__x-btn">
+          <img th:src="@{/imgs/fragments/icon/icon_close.png}" alt="">
+        </div>
+        <div class="header__keyword-box">
+          <input type="text" name="keyword" class="header__input-keyword">
+          <button class="header__search-icon">
+            <img th:src="@{/imgs/fragments/icon/icon_search.png}" alt="">
+          </button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+</header>
+</body>
+</html>

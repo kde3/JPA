@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: NotoSans-Regular, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style-type: none;
+}
+
+.none{
+    display: none;
+}
+
+.content-wrap{
+    min-height: 500px;
+}
+
+:root{
+    --main-color : rgb(250, 100, 98);
+    --strong-color : rgb(255, 69, 67);
+    --week-color1 : rgb(255, 209, 209);
+    --week-color2 : rgb(255, 241, 241);
+}
